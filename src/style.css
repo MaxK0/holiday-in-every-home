@@ -472,7 +472,7 @@ header {
 .search__form label {
     width: 33.125rem;
     color: #FFFAE8;
-    font-size: 1.5rem;
+    font-size: 1.375rem;
 }
 
 .form_element {
@@ -556,6 +556,39 @@ header {
 .stocks__block__desc p {
     font-size: 1.5rem;
     width: 45rem;
+}
+
+/* ---------------------------------------- */
+
+/* Расслыка на почту */
+/* ---------------------------------------- */
+
+.mailing {
+    padding: 3.25rem 4.375rem;
+    background-color: #9C9C98;
+}
+
+.mailing > h2 {
+    color: #F5E6CC;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.mailing__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailing__form > label {
+    width: 33.125rem;
+    color: #FFFAE8;
+    font-size: 1.375rem;
+}
+
+.mailing__form_email::placeholder {
+    opacity: 1;
 }
 
 /* ---------------------------------------- */
