@@ -59,6 +59,11 @@ body {
     font-size: 1.875rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* ---------------------------------------- */
 
 /* Общие */
@@ -82,7 +87,7 @@ body {
 
 header {
     background-color: #FCCD04;
-    height: 4.37rem;
+    height: 4rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -105,12 +110,9 @@ header {
 
 .header__reservation,
 .header__search,
-.header__stocks {
-    color: black;
-    text-decoration: none;
+.header__stocks {    
     font-size: 2.0625rem;
-    margin-left: 7rem;
-    font-family: 'Grandstander', sans-serif;
+    margin-left: 7rem;    
     font-weight: 500;
 }
 
@@ -124,7 +126,7 @@ header {
 /* ---------------------------------------- */
 
 .major_inf {     
-    padding: 7.5rem 3.75rem 3.25rem 3.75rem;  
+    padding: 7.25rem 3.75rem 3.25rem 3.75rem;  
 }
 
 .major_inf > p {
@@ -432,6 +434,7 @@ header {
     position: relative;
     top: 2rem;
     z-index: -1;
+    margin-bottom: 2rem;
 }
 
 .review_2 img {
@@ -502,6 +505,7 @@ header {
 .form_button {
     width: 36.1555rem;
     background-color: #FCCD04;
+    margin-bottom: 0;
 }
 
 /* ---------------------------------------- */
@@ -523,7 +527,7 @@ header {
 
 .stocks__block {
     background-color: #FFFAE8;
-    padding: 1.875rem 0.7rem;
+    padding: 1.875rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -591,4 +595,25 @@ header {
     opacity: 1;
 }
 
+/* ---------------------------------------- */
+
+/* Подвал */
+/* ---------------------------------------- */
+
+footer {
+    padding: 3.25rem 4.375rem 1.375rem 4.375rem;
+    background-color: #F5E6CC;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.75rem;
+}
+
+.footer__nav > ul {
+    list-style-type: none;
+}
+
+.footer__nav > ul > li {
+    text-decoration: none;
+    margin-bottom: 1.875rem;
+}
 /* ---------------------------------------- */
