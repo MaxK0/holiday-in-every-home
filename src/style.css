@@ -1,0 +1,498 @@
+@font-face {
+
+    font-family: 'Grandstander';
+ 
+    src: url('fonts/Grandstander-Regular.ttf') format('ttf');
+ 
+ }
+
+ @font-face {
+    font-family: 'Roboto';
+
+    src: url('fonts/Roboto-Regular.ttf') format('ttf');
+ }
+@media (min-width: 400px) {
+    html {font-size: 20.8333333%}
+}
+@media (min-width: 800px) {
+    html {font-size: 41.6666667%;}
+}
+@media (min-width: 1200px) {
+    html {font-size: 62.5%}
+}
+@media (min-width: 1600px) {
+    html {font-size: 83.3333333%}
+}
+@media (min-width: 1920px) {
+    html {font-size: 100%}
+}
+@media (min-width: 2200px) {
+    html {font-size: 114.583333%}
+}
+
+/* Стилизация по-умолчанию */
+/* ---------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;   
+    border: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------------------------- */
+
+/* Общие */
+/* ---------------------------------------- */
+
+.flex_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_column {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---------------------------------------- */
+
+/* Шапка сайта */
+/* ---------------------------------------- */
+
+header {
+    background-color: #FCCD04;
+    height: 4.37rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.header__logo {
+    margin-right: auto;
+    margin-left: 3rem;
+    margin-bottom: 0.2rem;
+    width: 5.8125rem;
+    height: 3.5625rem;
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__reservation,
+.header__search,
+.header__stocks {
+    color: black;
+    text-decoration: none;
+    font-size: 2.0625rem;
+    margin-left: 7rem;
+    font-family: 'Grandstander', sans-serif;
+    font-weight: 500;
+}
+
+.header__reservation {
+    margin-right: 3rem;
+}
+
+/* ---------------------------------------- */
+
+/* Секция основной информации и алгоритма бронироваия */
+/* ---------------------------------------- */
+
+.major_inf {     
+    padding: 7.5rem 3.75rem 3.25rem 3.75rem;  
+}
+
+.major_inf > p {
+    width: 78.125rem;    
+}
+
+.major_inf__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.8125rem;
+}
+
+.major_inf__text__services {
+    width: 26.875rem;
+}
+
+.major_inf__text > ul > li {
+    margin-left: 1.5rem;
+    margin-top: 1.875rem;
+}
+
+.major_inf__text__games {
+    width: 50rem;
+    margin-top: 2.8125rem;
+}
+
+.major_inf__text__experience {
+    margin-top: 2.8125rem;
+}
+
+.major_inf__plan_reservation {
+    background-image: url("/../img/plan_reservation_back.svg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 54.254375rem;
+    height: 52.3125rem;
+    padding: 1.5rem 2.375rem 0rem 2.375rem;
+}
+
+.major_inf__plan_reservation > p {
+    margin-bottom: 5rem;
+}
+
+/* анимированный план бронирования */
+/* ---------------------------------------- */
+
+.major_inf__plan_reservation svg {
+    width: 49.5625rem;
+    height: 24rem;        
+    fill: none;
+}
+
+.major_inf__plan_reservation > svg > line {
+    stroke: black;
+    stroke-width: 0.1875rem;
+}
+
+.major_inf__plan_reservation > svg > path {
+    fill: none;
+}
+
+.plan__string_1 {
+    animation: strings 1.4s linear forwards;
+}
+.plan__line_1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 1.4s forwards;
+}
+.plan__line_2 {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+    animation: lines 5s linear 1.8s forwards;
+    
+}
+.plan__line_3 {
+    stroke-dasharray: 1900;
+    stroke-dashoffset: 1900;
+    animation: lines 5s linear 2.15s forwards;
+}
+.plan__string_2 {       
+    animation: strings 1s linear 2.65s forwards;
+}
+
+.plan__line_4 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 3.5s forwards;
+}
+.plan__line_5 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 3.9s forwards;
+}
+.plan__line_6 {
+    stroke-dasharray: 850;
+    stroke-dashoffset: 850;
+    animation: lines 5s linear 4.25s forwards;
+}
+.plan__string_3 {       
+    animation: strings 1s linear 4.55s forwards;
+}
+
+.plan__line_7 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 5.55s forwards;
+}
+.plan__line_8 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 5.95s forwards;
+}
+.plan__line_9 {
+    stroke-dasharray: 1900;
+    stroke-dashoffset: 1900;
+    animation: lines 5s linear 6.35s forwards;
+}
+.plan__string_4 {       
+    animation: strings 1s linear 6.85s forwards;
+}
+
+.plan__line_10 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 7.6s forwards;
+}
+.plan__line_11 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 8s forwards;
+}
+.plan__line_12 {
+    stroke-dasharray: 850;
+    stroke-dashoffset: 850;
+    animation: lines 5s linear 8.4s forwards;
+}
+.plan__string_5 {       
+    animation: strings 1s linear 8.7s forwards;
+}
+
+.plan__line_13 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 9.7s forwards;
+}
+.plan__line_14 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: lines 5s linear 10.1s forwards;
+}
+.plan__line_15 {
+    stroke-dasharray: 1900;
+    stroke-dashoffset: 1900;
+    animation: lines 5s linear 10.5s forwards;
+}
+.plan__string_6 {       
+    animation: strings 1s linear 11s forwards;
+}
+
+@keyframes lines {
+    100% {
+        stroke-dashoffset: 0;            
+    }
+}
+
+@keyframes strings {
+    0% {
+        opacity: 0;
+        fill: black;
+    }
+    100% {            
+        opacity: 1; 
+        fill: black;
+    }
+}
+
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+
+/* Секция показа локаций для бронирования */
+/* ---------------------------------------- */
+
+.locations {
+    padding: 3.25rem 4.375rem;   
+    background-color: #9C9C98;  
+}
+.locations > p {
+    color: #F5E6CC;
+    width: 83rem;
+}
+
+.locations__photos {
+    margin: 2.8125rem auto;
+    width: 100rem;
+    background-color: #F5E6CC;
+    padding: 2rem 0;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photos__arrow_left,
+.photos__arrow_right {
+    background: none;
+    border: none;
+    margin: 0 1rem;
+}
+
+.photos__arrow_right {
+    margin-left: 0.5rem
+}
+
+.photos__arrow_left img {
+    width: 5rem;
+}
+
+.photos__arrow_right img{     
+    width: 5rem;
+}
+
+.photos__images {
+    display: flex;
+}
+
+.photos__images img{  
+    width: 28rem;
+    height: 21rem;
+    margin-right: 0.5rem; 
+}
+
+/* ---------------------------------------- */
+
+/* Цель, девиз, отзывы */
+/* ---------------------------------------- */
+
+.impressions {
+    padding: 3.25rem 0;    
+}
+
+.impressions h1 {
+    font-size: 2.5rem;
+    margin: 10.9rem auto;
+}
+
+.impressions h2 {
+    font-size: 2.25rem;    
+}
+
+.impressions h3 {
+    font-size: 1.875rem;
+}
+
+.impressions__goal {
+    align-items: center;
+    margin-left: 4.375rem;
+}
+
+.impressions__goal > p {
+    font-size: 1.75rem;
+    margin-left: 2.5rem;
+    width: 31rem;
+}
+
+.impressions__slogan {
+    align-items: center;
+    margin-right: 4.375rem;
+}
+
+.impressions__slogan > p {
+    font-size: 1.75rem;
+    margin-left: 2.5rem;
+    width: 26rem;
+}
+
+.impressions__reviews_box {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.impressions__reviews {
+    padding: 1.25rem;    
+    border: 0.1875rem solid #FCCD04;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5rem;
+    height: 100%;
+    margin-right: 1.5rem;
+}
+
+.impressions__reviews p {
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.impressions__reviews img {
+    border-radius: 1.5rem;
+}
+
+.review_1 img {
+    width: 31.5rem;
+}
+
+.review_2 {
+    position: relative;
+    top: 2rem;
+    z-index: -1;
+}
+
+.review_2 img {
+    width: 41.43rem;
+}
+
+.review_3 {
+    margin-right: 0;
+}
+
+.review_3 img {
+    width: 30.25rem;
+}
+
+/* ---------------------------------------- */
+
+/* Поиск */
+/* ---------------------------------------- */
+
+.search {
+    padding: 3.25rem 4.375rem;   
+    background-color: #9C9C98;
+}
+
+.search__form {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;       
+}
+
+.search__form label {
+    width: 33.125rem;
+    color: #FFFAE8;
+    font-size: 1.5rem;
+}
+
+.form_element {
+    margin-bottom: 5rem;
+    background-color: #F5E6CC;
+    width: 33.125rem;
+    height: 5.625rem;    
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 0 1.5625rem;  
+    font-size: 1.625rem;  
+}
+
+.form_region {
+    appearance: none;
+    width: 36.25rem;
+}
+
+
+
+.form_people {
+    margin-bottom: 8.75rem;
+}
+
+.form_people::placeholder {    
+    opacity: 1;
+}
+
+.form_button {
+    width: 36.1555rem;
+    background-color: #FCCD04;
+}
+
+/* ---------------------------------------- */
