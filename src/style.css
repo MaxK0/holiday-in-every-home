@@ -47,6 +47,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.h1 {
+    font-size: 2.5rem;
+}
+
+.h2 {
+    font-size: 2.25rem;    
+}
+
+.h3 {
+    font-size: 1.875rem;
+}
+
 /* ---------------------------------------- */
 
 /* Общие */
@@ -347,6 +359,7 @@ header {
 .photos__images img{  
     width: 28rem;
     height: 21rem;
+    object-fit: cover;
     margin-right: 0.5rem; 
 }
 
@@ -360,16 +373,7 @@ header {
 }
 
 .impressions h1 {
-    font-size: 2.5rem;
     margin: 10.9rem auto;
-}
-
-.impressions h2 {
-    font-size: 2.25rem;    
-}
-
-.impressions h3 {
-    font-size: 1.875rem;
 }
 
 .impressions__goal {
@@ -452,6 +456,13 @@ header {
     background-color: #9C9C98;
 }
 
+.search > h2 {
+    color: #F5E6CC;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
 .search__form {
     display: flex;
     flex-direction: column;  
@@ -480,8 +491,6 @@ header {
     width: 36.25rem;
 }
 
-
-
 .form_people {
     margin-bottom: 8.75rem;
 }
@@ -493,6 +502,60 @@ header {
 .form_button {
     width: 36.1555rem;
     background-color: #FCCD04;
+}
+
+/* ---------------------------------------- */
+
+/* Акции */
+/* ---------------------------------------- */
+
+.stocks {
+    padding: 3.25rem 4.375rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.stocks > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.stocks__block {
+    background-color: #FFFAE8;
+    padding: 1.875rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    border-radius: 1.5rem;  
+    width: auto;
+    margin: 5rem auto 0 auto;
+}
+
+.stocks__block h3 {
+    font-size: 1.625rem;
+    width: 51.8125rem;
+    text-align: center;
+}
+
+.stocks__block img {
+    width: 26rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-top: 2.1875rem;
+    margin-bottom: 3.125rem;
+}
+
+.stocks__block__desc summary {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 45rem;
+}
+
+.stocks__block__desc p {
+    font-size: 1.5rem;
+    width: 45rem;
 }
 
 /* ---------------------------------------- */
