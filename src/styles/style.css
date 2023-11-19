@@ -1,16 +1,9 @@
 @font-face {
-
-    font-family: 'Grandstander';
- 
-    src: url('fonts/Grandstander-Regular.ttf') format('ttf');
- 
- }
-
- @font-face {
     font-family: 'Roboto';
 
     src: url('fonts/Roboto-Regular.ttf') format('ttf');
- }
+}
+
 @media (min-width: 400px) {
     html {font-size: 20.8333333%}
 }
@@ -80,6 +73,40 @@ a {
     justify-content: space-between;
 }
 
+.form_element {
+    margin-bottom: 5rem;
+    background-color: #F5E6CC;
+    width: 33.125rem;
+    height: 5.625rem;    
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 0 1.5625rem;  
+    font-size: 1.625rem;  
+}
+
+.form_element::placeholder {
+    opacity: 1;
+}
+
+.form_button {
+    width: 36.1555rem;
+    background-color: #FCCD04;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.form_button:hover {
+    background-color: #D0B338;
+}
+
+.form_button:active {
+    font-size: 1.8rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* ---------------------------------------- */
 
 /* Шапка сайта */
@@ -93,6 +120,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 
 .header__logo {
@@ -312,7 +340,7 @@ header {
 
 /* ---------------------------------------- */
 
-/* Секция показа локаций для бронирования */
+/* Секция предоставления компнии и показ картинок локаций */
 /* ---------------------------------------- */
 
 .locations {
@@ -327,7 +355,7 @@ header {
 .locations__photos {
     margin: 2.8125rem auto;
     width: 100rem;
-    background-color: #F5E6CC;
+    
     padding: 2rem 0;
     border-radius: 1.5rem;
     display: flex;
@@ -335,23 +363,33 @@ header {
     align-items: center;
 }
 
-.photos__arrow_left,
-.photos__arrow_right {
+.photos__arrow {
     background: none;
     border: none;
-    margin: 0 1rem;
+    margin: 0 2rem;
+    cursor: pointer;
 }
 
 .photos__arrow_right {
-    margin-left: 0.5rem
+    margin-left: 0.5rem;
+    transform: rotate(180deg);
 }
 
-.photos__arrow_left img {
-    width: 5rem;
+.photos__arrow img {
+    width: 2rem;
 }
 
-.photos__arrow_right img{     
-    width: 5rem;
+.photos__arrow_right:hover {
+    width: 1rem;
+}
+
+.photos__arrow_left:hover {
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+.photos__arrow img:active {
+    width: 2.5rem;
 }
 
 .photos__images {
@@ -362,7 +400,8 @@ header {
     width: 28rem;
     height: 21rem;
     object-fit: cover;
-    margin-right: 0.5rem; 
+    margin-right: 1.5rem; 
+    border-radius: 1.5rem;
 }
 
 /* ---------------------------------------- */
@@ -478,17 +517,6 @@ header {
     font-size: 1.375rem;
 }
 
-.form_element {
-    margin-bottom: 5rem;
-    background-color: #F5E6CC;
-    width: 33.125rem;
-    height: 5.625rem;    
-    align-items: center;
-    border-radius: 1.5rem;
-    padding: 0 1.5625rem;  
-    font-size: 1.625rem;  
-}
-
 .form_region {
     appearance: none;
     width: 36.25rem;
@@ -502,11 +530,7 @@ header {
     opacity: 1;
 }
 
-.form_button {
-    width: 36.1555rem;
-    background-color: #FCCD04;
-    margin-bottom: 0;
-}
+
 
 /* ---------------------------------------- */
 
@@ -526,13 +550,12 @@ header {
 }
 
 .stocks__block {
-    background-color: #FFFAE8;
+    background-color: #F5E6CC;
     padding: 1.875rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;  
     border-radius: 1.5rem;  
-    width: auto;
     margin: 5rem auto 0 auto;
 }
 

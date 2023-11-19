@@ -1,0 +1,67 @@
+main {
+    padding: 7.25rem 3.75rem 3.25rem 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main > h2 {
+    width: 100%;
+    text-align: center;    
+}
+
+.location__block {
+    background-color: #F5E6CC;
+    padding: 2rem 2.2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;      
+    margin: 5rem auto 0 auto;
+}
+
+.location__name_desc {
+    display: flex;
+    margin-top: 3.75rem;
+}
+
+.location__name_desc:first-child {
+    margin-top: 0;
+}
+
+.location__name_desc > p {
+    margin-left: 1.875rem;
+}
+
+.location__buttons {
+    margin-top: 4.6875rem;
+}
+
+.location__button {    
+    width: 25rem;
+}
+
+.location__like_button {
+    background: url('/img/unlike.svg');
+    width: 3.75rem;
+    height: 3.75rem;
+    background-size: cover;
+    align-self: center;
+    cursor: pointer;    
+}
+
+.location__like_button:hover {
+    background: url('/img/like.svg');
+}
+
+.location__like_button:active {
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+    align-self: center;
+}
+
+.location__like_button:focus {
+    background: url('/img/like.svg');
+    background-size: cover;
+    align-self: center;
+}

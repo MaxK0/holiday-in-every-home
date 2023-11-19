@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/style_booking.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <!-- --------------------------------------------------------------- -->
+
+    <header>
+        <a class="header__logo" href="index.html">
+            <img src="img/logo.svg" alt="Логотип">
+        </a>
+        <a class="header__stocks" href="index.html#stocks">Акции</a>
+        <a class="header__search" href="index.html#search">Поиск</a>
+        <a class="header__reservation" href="#">Бронирование</a>
+    </header>
+
+    <!-- --------------------------------------------------------------- -->
+    
+    <!-- Тело сайта -->
+    <!-- --------------------------------------------------------------- -->
+    
+    <main id="booking">
+        <h2>Данные о заказе</h2>
+        
+        <form class="booking__form" action="">
+            <section class="booking__block_main_data booking__block">
+                <label for="booking__form_region">Регион</label>
+                    <select
+                        id="booking__form_region"
+                        class="form_element form_region"
+                        name="booking__form_region"
+                        required
+                    >
+                        <option class="form_region__placeholder" value="" disabled selected>Регион</option>
+                    </select>
+                    <label for="booking__form_location">Адрес локации</label>
+                    <select
+                        id="booking__form_location"
+                        class="form_element form_region"
+                        name="booking__form_location"
+                        required
+                    >
+                        <option class="form_region__placeholder" value="" disabled selected>Адрес локации</option>
+                    </select>
+                
+                    <label for="booking__form_date">Дата мероприятия</label>
+                    <input
+                        type="date"
+                        id="booking__form_date"
+                        class="form_element form_date"
+                        name="booking__form_date"
+                        required
+                    >
+                    <label for="booking__form_people">Количество людей</label>
+                    <input
+                        type="text"
+                        id="booking__form_people"
+                        class="form_element form_people booking__last_1"
+                        name="booking__form_people"
+                        placeholder="Количество людей"
+                        required
+                    >
+                    <div class="booking__name_value">
+                        <h3>Стоимость:</h3>
+                        <p>x рублей</p>
+                    </div>
+            </section>
+
+                <section class="booking__block_additional_and_email booking__block">
+                    <h2 class="header__additional_services">Выбор дополнительных услуг</h2>
+                    <div class="booking__form_additional">
+                        <label for="booking__form_feeding">Организация питания</label>
+                        <input
+                            type="checkbox"
+                            id="booking__form_feeding"
+                            class="booking__form_feeding"
+                            name="booking__form_feeding"
+                        >
+                    </div>
+                    <div class="booking__form_additional">
+                        <label for="booking__form_animators">Услуги аниматоров</label>
+                        <input
+                            type="checkbox"
+                            id="booking__form_animators"
+                            class="booking__form_animators"
+                            name="booking__form_animators"
+                        >
+                    </div>
+                    <div class="booking__form_additional">
+                        <label for="booking__form_presenter">Услуги ведущего</label>
+                        <input
+                            type="checkbox"
+                            id="booking__form_presenter"
+                            class="booking__form_presenter"
+                            name="booking__form_presenter"
+                        >
+                    </div>
+                    <div class="booking__form_additional">
+                        <label for="booking__form_children_taxi">Услуги детского такси</label>
+                        <input
+                            type="checkbox"
+                            id="booking__form_children_taxi"
+                            class="booking__form_children_taxi booking__form_additional__last"
+                            name="booking__form_children_taxi"
+                        >
+                    </div>
+                    
+                    <label for="booking__form_comment">Дополнительный комментарий</label>
+                    <input
+                        type="text"
+                        id="booking__form_comment"
+                        class="booking__form_comment form_element"
+                        name="booking__form_comment"
+                        placeholder="Комментарий"
+                    >
+                    
+                    <label for="booking__form_email">email</label>
+                    <input
+                        type="email"
+                        id="booking__form_email"
+                        class="booking__form_email form_element"
+                        name="booking__form_email"
+                        placeholder="почта@gmail.com"
+                        required
+                    >
+                </section>
+                
+                <section class="booking__block_result booking__block">
+                    <div class="booking__name_value booking__result">
+                        <h2>Итоговая стоимость:</h2>
+                        <p>x рублей</p>
+                    </div>
+                    <button
+                        type="submit"
+                        class="form_element form_button"
+                    >Оформить бронирование</button>
+                </section>
+        </form>
+    </main>
+    
+    <!-- --------------------------------------------------------------- -->
+
+    <!-- Подвал сайта -->
+    <!-- --------------------------------------------------------------- -->
+    
+    <footer>
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="http://xxxxxx">Домой</a></li>
+                <li><a href="http://xxxxxx/login">Войти</a></li>
+                <li><a href="http://xxxxxx/signup">Зарегистрироваться</a></li>
+                <li><a href="http://xxxxxx/contact">Контакты</a></li>
+                <li><a href="http://xxxxxx/news">Новости</a></li>
+                <li><a href="http://xxxxxx/return">Возврат</a></li>
+                <li><a href="http://xxxxxx/feedback">Оставить отзыв</a></li>
+            </ul>
+        </nav>
+        <p>Телефон «<a href="tel:+78001112020">8 (800) 111-20-20</a>»</p>
+    </footer>
+    
+    <!-- --------------------------------------------------------------- -->
+
+</body>
+</html>
