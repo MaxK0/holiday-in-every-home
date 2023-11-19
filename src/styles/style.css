@@ -93,6 +93,7 @@ a {
     background-color: #FCCD04;
     margin-bottom: 0;
     cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .form_button:hover {
@@ -106,6 +107,8 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
 
 /* ---------------------------------------- */
 
@@ -186,7 +189,7 @@ header {
 }
 
 .major_inf__plan_reservation {
-    background-image: url("/../img/plan_reservation_back.svg"); 
+    background-image: url("/../img/other/plan_reservation_back.svg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

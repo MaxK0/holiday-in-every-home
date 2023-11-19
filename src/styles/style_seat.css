@@ -45,8 +45,8 @@ main > p {
 
 .scheme__tent {
     position: absolute;
-    left: 42.5rem;
-    top: 2rem;    
+    left: 39rem;
+    top: 24rem;    
 }
 
 .scheme__summer_house_2 {
@@ -62,7 +62,7 @@ main > p {
 }
 
 .zone__open_desc {
-    background: url(/img/marker.svg);
+    background: url(/img/icons/marker.svg);
     width: 3.75rem;
     height: 3.75rem;
     background-size: cover;
@@ -91,7 +91,7 @@ main > p {
 
 .zone__desc {
     padding: 2rem 2.2rem;
-    background-color: #F5E6CC;      
+    background-color: #F5E6CC;          
     flex-direction: column;
     border-radius: 1.5rem;  
     position: absolute;
@@ -111,7 +111,17 @@ main > p {
 }
 
 .zone__name_desc > p {
-    margin-left: 1.875rem;        
+    margin-left: 1.875rem;      
+}
+
+.zone__img {
+    width: 23rem;
+    height: 13.125rem;
+    object-fit: cover;
+    position: absolute;
+    left: 32rem;
+    bottom: 13.5rem;
+    border-radius: 1.5rem;
 }
 
 .zone__buttons {
@@ -121,6 +131,7 @@ main > p {
 .zone__close_desc {
     background-color: #D53032;
     width: 20rem;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .zone__close_desc:hover {

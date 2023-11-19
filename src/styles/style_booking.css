@@ -70,6 +70,7 @@ h2, h3 {
 
 .booking__form_additional > label {
     margin-left: 1.875rem;
+    font-size: 1.8rem;
 }
 
 .booking__form_additional > input {
@@ -83,9 +84,12 @@ h2, h3 {
 
 .booking__result {    
     margin-bottom: 6rem;
+    position: relative;
+    left: 0;
+    width: 36.1551875rem;
 }
 
 .booking__result > p {
-    font-size: 2rem;
+    font-size: 2rem;    
 }
 

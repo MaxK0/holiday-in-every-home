@@ -41,16 +41,18 @@ main > h2 {
 }
 
 .location__like_button {
-    background: url('/img/unlike.svg');
+    background: url('/img/icons/unlike.svg');
     width: 3.75rem;
     height: 3.75rem;
     background-size: cover;
     align-self: center;
-    cursor: pointer;    
+    cursor: pointer;        
 }
 
 .location__like_button:hover {
-    background: url('/img/like.svg');
+    background: url('/img/icons/like.svg');
+    background-size: cover;
+    align-self: center;    
 }
 
 .location__like_button:active {
@@ -61,7 +63,7 @@ main > h2 {
 }
 
 .location__like_button:focus {
-    background: url('/img/like.svg');
+    background: url('/img/icons/like.svg');
     background-size: cover;
     align-self: center;
 }

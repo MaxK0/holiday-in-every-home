@@ -6,7 +6,7 @@
     <title>Доступные зоны</title>
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/style_seat.css">
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="img/logo/favicon.svg">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 
     <header>
         <a class="header__logo" href="index.html">
-            <img src="img/logo.svg" alt="Логотип">
+            <img src="img/logo/logo.svg" alt="Логотип">
         </a>
         <a class="header__stocks" href="index.html#stocks">Акции</a>
         <a class="header__search" href="index.html#search">Поиск</a>
@@ -30,12 +30,12 @@
         <!-- Схема -->
         <!-- --------------------------------------------------------------- -->
         
-        <h2>Свободные зоны для вашего выбора.</h2>
-        <p><small>(Вы можете просмотреть информацию о зоне, нажав на маркер)</small></p>
+        <h2>Свободные зоны по вашему выбору.</h2>
+        <p><small>(Вы можете просмотреть информацию о них, нажав на маркеры)</small></p>
         <div class="scheme">
-            <img class="scheme__map" src="img/scheme.jpg" alt="Схема туристической базы 'Озеро Красилово'">
+            <img class="scheme__map" src="img/schemes/scheme.jpg" alt="Схема туристической базы 'Озеро Красилово'">
             <div class="scheme__zone scheme__summer_house_1">
-                <form action="#zone__desc_summer_house">
+                <form action="#zone__desc_summer_house_1">
                     <button class="zone__open_desc"></button>
                 </form>
             </div>
@@ -45,7 +45,7 @@
                 </form>
             </div>
             <div class="scheme__zone scheme__summer_house_2">
-                <form action="#zone__desc_summer_house">
+                <form action="#zone__desc_summer_house_2">
                     <button class="zone__open_desc"></button>
                 </form>
             </div>
@@ -61,8 +61,8 @@
         <!-- Описание зон -->
         <!-- --------------------------------------------------------------- -->
         
-        <div id="zone__desc_summer_house" class="blackout">
-            <div class="desc_summer_house zone__desc">
+        <div id="zone__desc_summer_house_1" class="blackout">
+            <div class="desc_summer_house zone__desc">                
                 <div class="zone__name_desc">
                     <h3>Название:</h3>
                     <p>летний домик</p>
@@ -75,6 +75,33 @@
                     <h3>Стоимость:</h3>
                     <p>3000 р/сутки</p>
                 </div>
+                <img class="zone__img" src="img/locations/location4.jpg" alt="Летний домик">
+                <div class="flex_row zone__buttons">
+                    <form action="booking.html">
+                        <button class="form_element form_button zone__book">Забронировать</button>
+                    </form>
+                    <form action="#">
+                        <button class="form_element form_button zone__close_desc">Закрыть</button>
+                    </form>
+                </div>        
+            </div>
+        </div>
+
+        <div id="zone__desc_summer_house_2" class="blackout">
+            <div class="desc_summer_house zone__desc">                
+                <div class="zone__name_desc">
+                    <h3>Название:</h3>
+                    <p>летний домик</p>
+                </div>
+                <div class="zone__name_desc">
+                    <h3>Вместимость:</h3>
+                    <p>до 10 человек</p>
+                </div>
+                <div class="zone__name_desc">
+                    <h3>Стоимость:</h3>
+                    <p>3000 р/сутки</p>
+                </div>
+                <img class="zone__img" src="img/locations/location5.jpg" alt="Летний домик">
                 <div class="flex_row zone__buttons">
                     <form action="booking.html">
                         <button class="form_element form_button zone__book">Забронировать</button>
@@ -100,6 +127,7 @@
                     <h3>Стоимость:</h3>
                     <p>5000 р/сутки</p>
                 </div>
+                <img class="zone__img" src="img/locations/location2.jpg" alt="Шатер">
                 <div class="flex_row zone__buttons">
                     <form action="booking.html">
                         <button class="form_element form_button zone__book">Забронировать</button>
@@ -125,6 +153,7 @@
                     <h3>Стоимость:</h3>
                     <p>2000 р/сутки</p>
                 </div>
+                <img class="zone__img" src="img/locations/location3.jpeg" alt="Шатер">
                 <div class="flex_row zone__buttons">
                     <form action="booking.html">
                         <button class="form_element form_button zone__book">Забронировать</button>
