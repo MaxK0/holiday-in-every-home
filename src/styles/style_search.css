@@ -61,9 +61,3 @@ main > h2 {
     background-size: cover;
     align-self: center;
 }
-
-.location__like_button:focus {
-    background: url('/img/icons/like.svg');
-    background-size: cover;
-    align-self: center;
-}

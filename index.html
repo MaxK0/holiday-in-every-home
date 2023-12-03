@@ -83,15 +83,15 @@
         <section class="locations">            
             <p class="locations__text_reservation">Клиенты компании «Праздник в каждый дом» имеют возможность <strong>забронировать</strong> одну из предоставленных локаций для организации детского праздника.</p>            
             <div class="locations__photos">
-                <button class="photos__arrow_left photos__arrow">
+                <button class="photos__arrow_left photos__arrow" onclick="changeImage(-1);">
                     <img src="img/icons/arrow.svg" alt="Стрелочка налево">
                 </button>
                 <div class="photos__images">
-                    <img src="img/locations/location1.jpg" alt="Локация 1">
-                    <img src="img/locations/location2.jpg" alt="Локация 2">
-                    <img src="img/locations/location3.jpeg" alt="Локация 3">
+                    <img id="photo_1" src="img/locations/location1.jpg" alt="Локация 1">
+                    <img id="photo_2" src="img/locations/location2.jpg" alt="Локация 2">
+                    <img id="photo_3" src="img/locations/location3.jpeg" alt="Локация 3">
                 </div>
-                <button class="photos__arrow_right photos__arrow">
+                <button class="photos__arrow_right photos__arrow" onclick="changeImage(1);">
                     <img src="img/icons/arrow.svg" alt="Стрелочка направо">
                 </button>                
             </div>
@@ -157,7 +157,6 @@
                     id="search__form_date"
                     class="form_element form_date"       
                     name="search__form_date"
-                    placeholder="20.11.2023"
                     required 
                 >
 
@@ -279,6 +278,6 @@
     </footer>
     
     <!-- --------------------------------------------------------------- -->
-
+    <script src="src/scripts/scripts_index.js"></script>
 </body>
 </html>

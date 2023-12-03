@@ -40,16 +40,17 @@
                         required
                     >
                         <option class="form_region__placeholder" value="" disabled selected>Регион</option>
+                        <option value="1">Алтайский край</option>
                     </select>
                     <label for="booking__form_location">Адрес локации</label>
-                    <select
+                    <input
                         id="booking__form_location"
-                        class="form_element form_region"
+                        class="form_element"
                         name="booking__form_location"
+                        placeholder="Адрес"
                         required
-                    >
-                        <option class="form_region__placeholder" value="" disabled selected>Адрес локации</option>
-                    </select>
+                    >                        
+                    </input>
                 
                     <label for="booking__form_date">Дата мероприятия</label>
                     <input
@@ -74,75 +75,75 @@
                     </div>
             </section>
 
-                <section class="booking__block_additional_and_email booking__block">
-                    <h2 class="header__additional_services">Выбор дополнительных услуг</h2>
-                    <div class="booking__form_additional">
-                        <label for="booking__form_feeding">Организация питания (500 руб/чел)</label>
-                        <input
-                            type="checkbox"
-                            id="booking__form_feeding"
-                            class="booking__form_feeding"
-                            name="booking__form_feeding"
-                        >
-                    </div>
-                    <div class="booking__form_additional">
-                        <label for="booking__form_animators">Услуги аниматоров (5000 руб/сутки)</label>
-                        <input
-                            type="checkbox"
-                            id="booking__form_animators"
-                            class="booking__form_animators"
-                            name="booking__form_animators"
-                        >
-                    </div>
-                    <div class="booking__form_additional">
-                        <label for="booking__form_presenter">Услуги ведущего (500 руб/час)</label>
-                        <input
-                            type="checkbox"
-                            id="booking__form_presenter"
-                            class="booking__form_presenter"
-                            name="booking__form_presenter"
-                        >
-                    </div>
-                    <div class="booking__form_additional">
-                        <label for="booking__form_children_taxi">Услуги детского такси (50 руб.  + 10 руб. за каждый км)</label>
-                        <input
-                            type="checkbox"
-                            id="booking__form_children_taxi"
-                            class="booking__form_children_taxi booking__form_additional__last"
-                            name="booking__form_children_taxi"
-                        >
-                    </div>
-                    
-                    <label for="booking__form_comment">Дополнительный комментарий</label>
+            <section class="booking__block_additional_and_email booking__block">
+                <h2 class="header__additional_services">Выбор дополнительных услуг</h2>
+                <div class="booking__form_additional">
+                    <label for="booking__form_feeding">Организация питания (500 руб/чел)</label>
                     <input
-                        type="text"
-                        id="booking__form_comment"
-                        class="booking__form_comment form_element"
-                        name="booking__form_comment"
-                        placeholder="Комментарий"
+                        type="checkbox"
+                        id="booking__form_feeding"
+                        class="booking__form_feeding"
+                        name="booking__form_feeding"
                     >
-                    
-                    <label for="booking__form_email">email</label>
+                </div>
+                <div class="booking__form_additional">
+                    <label for="booking__form_animators">Услуги аниматоров (5000 руб/сутки)</label>
                     <input
-                        type="email"
-                        id="booking__form_email"
-                        class="booking__form_email form_element"
-                        name="booking__form_email"
-                        placeholder="почта@gmail.com"
-                        required
+                        type="checkbox"
+                        id="booking__form_animators"
+                        class="booking__form_animators"
+                        name="booking__form_animators"
                     >
-                </section>
+                </div>
+                <div class="booking__form_additional">
+                    <label for="booking__form_presenter">Услуги ведущего (500 руб/час)</label>
+                    <input
+                        type="checkbox"
+                        id="booking__form_presenter"
+                        class="booking__form_presenter"
+                        name="booking__form_presenter"
+                    >
+                </div>
+                <div class="booking__form_additional">
+                    <label for="booking__form_children_taxi">Услуги детского такси (50 руб.  + 10 руб. за каждый км)</label>
+                    <input
+                        type="checkbox"
+                        id="booking__form_children_taxi"
+                        class="booking__form_children_taxi booking__form_additional__last"
+                        name="booking__form_children_taxi"
+                    >
+                </div>
                 
-                <section class="booking__block_result booking__block">
-                    <div class="booking__name_value booking__result">
-                        <h2>Итоговая стоимость:</h2>
-                        <p>y рублей</p>
-                    </div>
-                    <button
-                        type="submit"
-                        class="form_element form_button"
-                    >Оформить бронирование</button>
-                </section>
+                <label for="booking__form_comment">Дополнительный комментарий</label>
+                <input
+                    type="text"
+                    id="booking__form_comment"
+                    class="booking__form_comment form_element"
+                    name="booking__form_comment"
+                    placeholder="Комментарий"
+                >
+                
+                <label for="booking__form_email">email</label>
+                <input
+                    type="email"
+                    id="booking__form_email"
+                    class="booking__form_email form_element"
+                    name="booking__form_email"
+                    placeholder="почта@gmail.com"
+                    required
+                >
+            </section>
+            
+            <section class="booking__block_result booking__block">
+                <div class="booking__name_value booking__result">
+                    <h2>Итоговая стоимость:</h2>
+                    <p>y рублей</p>
+                </div>
+                <button
+                    type="submit"
+                    class="form_element form_button"
+                >Оформить бронирование</button>
+            </section>
         </form>
     </main>
     
@@ -167,6 +168,6 @@
     </footer>
     
     <!-- --------------------------------------------------------------- -->
-
+    <script src="src/scripts/scripts_booking.js"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@
                 <p>Туристическая база "Озеро Красилово"</p>
             </div>         
             
-            <div class="location__name_desc">
+            <div class="location__name_desc location__address">
                 <h3>Адрес:</h3>
                 <p>Косихинский район, с. Озеро-Красилово, ул. Пушкина д.1</p>
             </div> 
@@ -53,9 +53,9 @@
             
             <div class="flex_row location__buttons">
                 <form action="seat.html">
-                    <button class="form_element form_button location__button">Перейти к зонам</button>
+                    <button class="form_element form_button location__button" data-action="choose_location">Перейти к зонам</button>
                 </form>                
-                <button class="location__like_button"></button>
+                <button class="location__like_button" data-action="like"></button>
             </div>
             
         </div>
@@ -82,6 +82,6 @@
     </footer>
     
     <!-- --------------------------------------------------------------- -->
-
+    <script src="src/scripts/scripts_search.js"></script>
 </body>
 </html>

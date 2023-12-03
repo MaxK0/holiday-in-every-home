@@ -18,15 +18,15 @@ h2, h3 {
 
 .booking__form {
     display: flex;    
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15rem;
     flex-wrap: wrap;
 }
 
 .booking__block{
     display: flex;
     flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .booking__block_result {
@@ -39,7 +39,7 @@ h2, h3 {
     color: #FFFAE8;
     width: 33.125rem;
     font-size: 1.375rem;
-    align-self: center;
+    margin-left: 1.5rem;
 }
 
 .booking__last_1 {
@@ -71,6 +71,7 @@ h2, h3 {
 .booking__form_additional > label {
     margin-left: 1.875rem;
     font-size: 1.8rem;
+    width: 33.125rem;
 }
 
 .booking__form_additional > input {
